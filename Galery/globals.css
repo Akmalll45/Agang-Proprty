@@ -7,6 +7,8 @@ img { display: block; max-width: 100%; }
 :root {
   --gold:        #B8860B;
   --gold-light:  #D4A017;
+  --gold-buram: #c8850aa0;
+  --gold-dark:   #7B0D0D;
   --dark:        #201D19;
   --crimson:     #770D0D;
   --white:       #FFFFFF;
@@ -149,7 +151,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   padding: 14px 36px;
-  background: var(--gold);
+  background: var(--gold-light);
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 14px;
@@ -160,7 +162,7 @@ img { display: block; max-width: 100%; }
 }
 
 .btn-cta:hover {
-  background: var(--gold-light);
+  background: var(--gold);
   color: var(--white);
 }
 
