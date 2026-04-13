@@ -111,8 +111,6 @@ img { display: block; max-width: 100%; }
   color: #fff;
   white-space: nowrap;
 }
-
-
 /* ===================== SHARED SECTION HEADER ===================== */
 .section-header {
   display: flex;
@@ -151,7 +149,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   padding: 14px 36px;
-  background: var(--crimson);
+  background: var(--gold);
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 14px;
@@ -160,9 +158,16 @@ img { display: block; max-width: 100%; }
   width: fit-content;
   transition: background .25s, color .25s;
 }
+
 .btn-cta:hover {
+  background: var(--gold-light);
+  color: var(--white);
+}
+
+.btn-cta:active {
   background: var(--gold);
-  color: var(--dark);
+  color: var(--white);
+  opacity: 0.8;
 }
 
 /* ===================== FOOTER ===================== */
