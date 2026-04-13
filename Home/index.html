@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="description" content="Agang Property - Find your dream home" />
+  <title>Agang Property</title>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="desktop">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navigation" role="navigation" aria-label="Main navigation">
+    <div class="nav-title">
+      <span>Agang Property</span>
+    </div>
+    <div class="nav-links">
+      <div class="nav-link-item"><a href="../Home/index.html"><span>Home</span></a></div>
+      <div class="nav-link-item"><a href="../Galery/index.html"><span>Gallery</span></a></div>
+      <div class="nav-link-item"><a href="../informasion/index.html"><span>Information</span></a></div>
+      <a href="../Servis/index.html">
+        <button class="nav-book-btn" type="button" aria-label="Book now">
+          <span>Book now</span>
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Hero banner">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <h1 class="hero-heading">Anything You Want,<br />Ready in Here...</h1>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / GALLERY SECTION ===== -->
+  <section class="about-section" aria-label="Gallery and About">
+
+    <!-- Gallery Frame -->
+    <div class="gallery-frame">
+      <div class="gallery-text-block">
+        <p class="gallery-label">Gallery</p>
+        <div class="gallery-title-row">
+          <p class="explore-heading">
+            Explore with <span class="brand">Agang Property</span>.
+          </p>
+          <div class="view-full-gallery">
+            <a href="../Galery/index.html" target="_blank" rel="noopener noreferrer">View full gallery</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Cards -->
+      <div class="gallery-grid" role="list" aria-label="Property gallery">
+
+        <!-- Card 1: Summarecon -->
+        <a class="gallery-card featured"
+           href="https://www.summarecon.com"
+           target="_blank" rel="noopener noreferrer"
+           role="listitem"
+           aria-label="Summarecon - Wonderful World, Wonderful Life"
+           onclick="selectCard(event, this)">
+          <div class="img-wrap">
+            <img src="img/gambar_1 galery.png" alt="Summarecon" />
+          </div>
+          <div class="gallery-caption">
+            <strong>Summarecon</strong>
+            Wonderful World, Wonderful Life
+          </div>
+        </a>
+
+        <!-- Card 2: CitraLand -->
+        <a class="gallery-card"
+           href="https://www.citraland.com"
+           target="_blank" rel="noopener noreferrer"
+           role="listitem"
+           aria-label="CitraLand - The Power of Dream!"
+           onclick="selectCard(event, this)">
+          <div class="img-wrap">
+            <img src="img/Gambar_2_galery.png" alt="CitraLand" />
+          </div>
+          <div class="gallery-caption">
+            <strong>CitraLand</strong>
+            The Power of Dream!
+          </div>
+        </a>
+
+        <!-- Card 3: Virginia Park -->
+        <a class="gallery-card"
+           href="#virginia-park"
+           role="listitem"
+           aria-label="Virginia Park - Luxury Home With Green Development"
+           onclick="selectCard(event, this)">
+          <div class="img-wrap">
+            <img src="img/Image_3_galery.png" alt="Virginia Park" />
+          </div>
+          <div class="gallery-caption">
+            <strong>Virginia Park</strong>
+            Luxury Home With Green Development
+          </div>
+        </a>
+
+        <!-- Card 4: The Mutiara Springs -->
+        <a class="gallery-card"
+           href="#mutiara-springs"
+           role="listitem"
+           aria-label="The Mutiara Springs - Home Surrounded by Nature"
+           onclick="selectCard(event, this)">
+          <div class="img-wrap">
+            <img src="img/Image_4_glery.png" alt="The Mutiara Springs" />
+          </div>
+          <div class="gallery-caption">
+            <strong>The Mutiara Springs</strong>
+            Home Surrounded by Nature
+          </div>
+        </a>
+
+        <!-- Card 5: Royal Spring -->
+        <a class="gallery-card"
+           href="#Royal-Spring"
+           role="listitem"
+           aria-label="Royal Spring - Discover Your Dream Home"
+           onclick="selectCard(event, this)">
+          <div class="img-wrap">
+            <img src="img/Image_5_galery.jpg" alt="Royal Spring" />
+          </div>
+          <div class="gallery-caption">
+            <strong>Royal Spring</strong>
+            Discover Your Dream Home at Royal Spring.
+          </div>
+        </a>
+
+      </div><!-- /gallery-grid -->
+    </div><!-- /gallery-frame -->
+
+    <!-- About Text -->
+    <div class="about-text">
+      <p class="about-label">About</p>
+      <p class="about-body">
+        Capek ngontrak terus? Yuk waktunya punya rumah sendiri!<br />
+        Daripada bayar kontrakan tiap tahun, mending beli rumah impian sekarang juga!<br /><br />
+        <a href="../informasion/index.html" target="_blank" rel="noopener noreferrer">Read our story</a>
+        &nbsp;for any detail information.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ===== DATE / CTA SECTION ===== -->
+  <div class="date-section" role="img" aria-label="Spring/Summer 2026 Dates Available">
+    <div class="date-bg"></div>
+    <div class="date-overlay"></div>
+    <div class="date-content">
+      <p class="date-eyebrow">Plan Your Dream Summer</p>
+      <h2 class="date-heading">Spring/Summer 2026<br />Dates Available</h2>
+      <a href="../Servis/index.html">
+        <button class="date-btn" type="button">Book now</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-top">
+        <span class="footer-brand">Agang Property</span>
+      </div>
+      <hr class="footer-hr" role="presentation" />
+      <div class="footer-info">
+        <p class="footer-copyright">2026 All Rights Reserved</p>
+        <p class="footer-phone"><a href="tel:+16465554567">(646) 555-4567</a></p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="footer-social-wrapper">
+        <div class="social-icons" role="list" aria-label="Social media links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" role="listitem">
+            <svg width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 6.5V4.5C6.5 3.67 7.17 3 8 3H9V0H6.5C4.57 0 3 1.57 3 3.5V6.5H0V9.5H3V18H6.5V9.5H9L10 6.5H6.5Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C5.83 0 5.56.01 4.7.05 3.84.09 3.25.23 2.73.44 2.19.66 1.73 1 1.28 1.44.84 1.89.5 2.35.28 2.89.07 3.41-.07 4 .03 4.86-.01 5.72 0 6 0 8s.01 2.28.05 3.14c.04.86.18 1.45.39 1.97.22.54.56 1 1.01 1.45.45.45.91.79 1.45 1.01.52.21 1.11.35 1.97.39.86.04 1.14.05 3.14.05s2.28-.01 3.14-.05c.86-.04 1.45-.18 1.97-.39a3.96 3.96 0 0 0 1.45-1.01c.45-.45.79-.91 1.01-1.45.21-.52.35-1.11.39-1.97.04-.86.05-1.14.05-3.14s-.01-2.28-.05-3.14c-.04-.86-.18-1.45-.39-1.97A3.96 3.96 0 0 0 13.56.44C13.04.23 12.45.09 11.59.05 10.73.01 10.45 0 8 0Zm0 1.44c2.16 0 2.42.01 3.27.05.79.04 1.22.17 1.5.28.38.15.65.33.93.61.28.28.46.55.61.93.11.29.24.72.28 1.5.04.85.05 1.11.05 3.27s-.01 2.42-.05 3.27c-.04.79-.17 1.22-.28 1.5-.15.38-.33.65-.61.93-.28.28-.55.46-.93.61-.29.11-.72.24-1.5.28-.85.04-1.11.05-3.27.05s-2.42-.01-3.27-.05c-.79-.04-1.22-.17-1.5-.28a2.51 2.51 0 0 1-.93-.61 2.51 2.51 0 0 1-.61-.93c-.11-.29-.24-.72-.28-1.5C1.45 10.42 1.44 10.16 1.44 8s.01-2.42.05-3.27c.04-.79.17-1.22.28-1.5.15-.38.33-.65.61-.93.28-.28.55-.46.93-.61.29-.11.72-.24 1.5-.28C5.58 1.45 5.84 1.44 8 1.44ZM8 3.89A4.11 4.11 0 1 0 8 12.11 4.11 4.11 0 0 0 8 3.89Zm0 6.78A2.67 2.67 0 1 1 8 5.33a2.67 2.67 0 0 1 0 5.34ZM12.27 2.72a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92Z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" role="listitem">
+            <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 3.5a3.5 3.5 0 0 1-3.5-3.5H7V11a2 2 0 1 1-2-2v-3a5 5 0 1 0 5 5V5.5a6.5 6.5 0 0 0 3.5 1V3.5Z"/></svg>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" role="listitem">
+            <svg width="18" height="13" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg"><path d="M17.6 2.03A2.26 2.26 0 0 0 16.01.44C14.63 0 9 0 9 0S3.37 0 1.99.44A2.26 2.26 0 0 0 .4 2.03C0 3.42 0 6.5 0 6.5s0 3.08.4 4.47a2.26 2.26 0 0 0 1.59 1.59C3.37 13 9 13 9 13s5.63 0 7.01-.44a2.26 2.26 0 0 0 1.59-1.59C18 9.58 18 6.5 18 6.5s0-3.08-.4-4.47ZM7.2 9.29V3.71L11.91 6.5 7.2 9.29Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /.desktop -->
+</body>
+</html>

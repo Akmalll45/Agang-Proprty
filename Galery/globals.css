@@ -1,0 +1,223 @@
+/* ===================== RESET & ROOT ===================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+:root {
+  --gold:        #B8860B;
+  --gold-light:  #D4A017;
+  --dark:        #201D19;
+  --crimson:     #770D0D;
+  --white:       #FFFFFF;
+  --bg:          #F9F7F4;
+  --divider:     rgba(0,0,0,0.12);
+  --divider-inv: rgba(255,255,255,0.25);
+
+  --font-display: 'EB Garamond', Georgia, serif;
+  --font-ui:      'Arimo', Helvetica, sans-serif;
+  --font-body:    'Roboto', Helvetica, sans-serif;
+
+  --h1:    clamp(52px, 6vw, 80px);
+  --h2:    clamp(28px, 3.5vw, 48px);
+  --label: 13px;
+  --small: 13px;
+}
+
+/* ===================== PAGE WRAPPER ===================== */
+/* ==================== NAVIGATION ==================== */
+.navigation {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  border-bottom: rgba(0, 0, 0, 1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 48px;
+}
+
+.nav-title {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 40px;
+  flex: 1;
+  height: 100%;
+}
+
+.nav-title span {
+  font-family: "Arimo", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #C8860A;
+  letter-spacing: -0.2px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: stretch;
+}
+
+.nav-link-item {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-left: 0.5px solid #302121;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-link-item:hover {
+  background: #f5f5f5;
+}
+
+.nav-link-item span {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+.nav-book-btn {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #7B0D0D;
+  border: none;
+  border-left: 0.5px solid #c8c8c8;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 100%;
+}
+
+.nav-book-btn:hover {
+  background: #C8860A;
+}
+
+.nav-book-btn span {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+
+/* ===================== SHARED SECTION HEADER ===================== */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+/* Hierarki Level 3 — label kecil */
+.section-label {
+  font-family: var(--font-ui);
+  font-size: var(--label);
+  font-weight: 400;
+  color: var(--dark);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* Hierarki Level 2 — judul section */
+.section-title {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: var(--h2);
+  color: var(--dark);
+  letter-spacing: -0.8px;
+  line-height: 1.1;
+}
+
+/* ===================== BUTTON CTA ===================== */
+.btn-cta {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 36px;
+  background: var(--crimson);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white);
+  letter-spacing: 0.5px;
+  width: fit-content;
+  transition: background .25s, color .25s;
+}
+.btn-cta:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: var(--dark);
+  padding: 56px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.footer-top {
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Hierarki Level 3 */
+.footer-brand {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gold);
+  letter-spacing: -0.2px;
+}
+.footer-hr {
+  width: 36px;
+  height: 1px;
+  background: var(--divider-inv);
+  border: none;
+}
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Hierarki Level 4 */
+.footer-copy,
+.footer-phone {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--gold);
+}
+.footer-bottom {
+  padding: 20px 48px 0;
+  border-top: 1px solid var(--divider-inv);
+  display: flex;
+  align-items: center;
+}
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.65;
+  transition: opacity .2s, transform .2s;
+}
+.social-icon:hover { opacity: 1; transform: scale(1.15); }

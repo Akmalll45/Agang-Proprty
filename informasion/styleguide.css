@@ -1,0 +1,101 @@
+/* =============================================================
+   styleguide.css — Agang Property
+   Design tokens: semua CSS variables dipakai di style.css
+   ============================================================= */
+
+:root {
+
+  /* ==================== COLORS ==================== */
+
+  /* Background */
+  --bg-1:        #ffffff;
+  --bg-2:        #f8f5f0;
+  --bg-3:        #ffffff;
+
+  /* Brand */
+  --header-3:    #B8860B;   /* gold — brand utama, overlay text, footer */
+  --accent-2:    #8B1A1A;   /* maroon — nav Book now button */
+
+  /* Text */
+  --header-1:    #1a1a1a;   /* dark — headings & body text */
+  --header-2:    #5a3e00;   /* dark gold — link underline */
+
+  /* Dividers */
+  --divider-1:   rgba(0, 0, 0, 0.12);   /* halus — section border, table row */
+  --divider-2:   rgba(0, 0, 0, 1);   /* sedikit lebih tebal — nav border */
+
+  /* ==================== TYPOGRAPHY ==================== */
+
+  /* Font families */
+  --font-headingg: 'EB Garamond', Georgia, serif;
+  --font-heading: "Arimo", Helvetica, sans-serif;
+  --font-body:    'Roboto', Helvetica, sans-serif;
+
+  /* H1 — "Information" hero */
+  --h1-size:  72px;
+  --h1-ls:    -0.02em;
+  --h1-lh:    1.05;
+
+  /* H2 — section headings, overlay, CTA */
+  --h2-size:  38px;
+  --h2-ls:    -0.76px;
+  --h2-lh:    110%;
+
+  /* H3 — story heading */
+  --h3-size:  48px;
+  --h3-ls:    -0.01em;
+  --h3-lh:    1.1;
+
+  /* Caption / small — nav links, labels, footer text */
+  --cap-size: 14px;
+  --cap-ls:   0px;
+  --cap-lh:   15.4px;
+
+  /* Body text */
+  --body-size: 18px;
+  --body-lh:   1.75;
+
+  /* ==================== SPACING ==================== */
+  --sp-4:    4px;
+  --sp-8:    8px;
+  --sp-10:   10px;
+  --sp-12:   12px;
+  --sp-16:   16px;
+  --sp-18:   18px;
+  --sp-20:   20px;
+  --sp-24:   24px;
+  --sp-25:   25px;
+  --sp-28:   28px;
+  --sp-30:   30px;
+  --sp-32:   32px;
+  --sp-40:   40px;
+  --sp-48:   48px;
+  --sp-60:   60px;
+  --sp-64:   64px;
+  --sp-80:   80px;
+  --sp-100:  100px;
+  --sp-160:  160px;
+
+  /* ==================== LAYOUT ==================== */
+  --max-width:   1280px;
+  --nav-height:  52px;
+  --nav-btn-w:   200px;
+  --gutter:      40px;
+  --gutter-wide: 160px;
+
+  /* ==================== SHADOWS ==================== */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,.08);
+  --shadow-md:  0 4px 18px rgba(0,0,0,.10);
+  --shadow-lg:  0 20px 40px rgba(0,0,0,.18);
+
+  /* ==================== BORDERS ==================== */
+  --radius-sm:   3px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* ==================== TRANSITIONS ==================== */
+  --transition-fast:   0.2s ease;
+  --transition-normal: 0.28s cubic-bezier(.22,.68,0,1.2);
+}

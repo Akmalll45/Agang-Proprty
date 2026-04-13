@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Agang Property – Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Arimo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navigation" role="navigation" aria-label="Main navigation">
+    <div class="nav-title">
+      <span>Agang Property</span>
+    </div>
+    <div class="nav-links">
+      <div class="nav-link-item"><a href="../Galery/index.html"><span>Gallery</span></a></div>
+      <div class="nav-link-item"><a href="../informasion/index.html"><span>Information</span></a></div>
+      <a href="../Servis/index.html">
+        <button class="nav-book-btn" type="button" aria-label="Book now">
+          <span>Book now</span>
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <!-- LEVEL 1: PAGE IDENTITY -->
+    <section class="hero-title">
+      <h1>Gallery</h1>
+    </section>
+
+    <!-- LEVEL 1: HERO BANNER -->
+    <section class="hero-banner">
+      <div class="hero-banner-text">
+        <p>Experience in Agang Property.<br>Explore our gallery and start planning.</p>
+      </div>
+    </section>
+
+    <!-- LEVEL 2: EXTERIOR VIEWS -->
+    <section class="exterior">
+      <div class="section-header">
+        <span class="section-label">Exterior Views</span>
+        <h2 class="section-title">The Highest Premium Property Collection.</h2>
+      </div>
+
+      <div class="card-row">
+        <div class="prop-card">
+          <div class="prop-card-img prop-card-img-summarecon"></div>
+          <div class="prop-card-name">Summarecon</div>
+          <div class="prop-card-tag">Wonderful World, Wonderful Life!</div>
+        </div>
+        <div class="prop-card">
+          <div class="prop-card-img prop-card-img-citraland"></div>
+          <div class="prop-card-name">CitraLand</div>
+          <div class="prop-card-tag">The Power of Dream!</div>
+        </div>
+      </div>
+
+      <div class="outer-look">
+        <div class="outer-look-img"></div>
+        <div class="outer-look-label">The Outer Look</div>
+      </div>
+    </section>
+
+    <!-- LEVEL 2: INTERIOR VIEWS (CSS-only slideshow) -->
+    <section class="interior">
+      <div class="section-header">
+        <span class="section-label">Interior Views</span>
+        <h2 class="section-title">Display How It Looks at Inner Property</h2>
+      </div>
+
+      <!-- Radio inputs harus SEBELUM .slideshow-wrap agar sibling selector (~) bekerja -->
+      <input class="slide-radio" type="radio" name="slide" id="s0" checked>
+      <input class="slide-radio" type="radio" name="slide" id="s1">
+      <input class="slide-radio" type="radio" name="slide" id="s2">
+      <input class="slide-radio" type="radio" name="slide" id="s3">
+
+      <div class="slideshow-wrap">
+
+        <!-- Thumbnail strip — klik untuk loncat ke slide -->
+        <div class="thumb-strip">
+          <label class="thumb-label thumb-label-0" for="s0"></label>
+          <label class="thumb-label thumb-label-1" for="s1"></label>
+          <label class="thumb-label thumb-label-2" for="s2"></label>
+          <label class="thumb-label thumb-label-3" for="s3"></label>
+        </div>
+
+        <!-- Prev | Slide Panel | Next -->
+        <div class="slideshow-row">
+
+          <!-- Previous: tiap label mengarah ke slide sebelumnya -->
+          <label class="btn-outline prev-0" for="s3">&#8592; Previous</label>
+          <label class="btn-outline prev-1" for="s0">&#8592; Previous</label>
+          <label class="btn-outline prev-2" for="s1">&#8592; Previous</label>
+          <label class="btn-outline prev-3" for="s2">&#8592; Previous</label>
+
+          <!-- Slide panels -->
+          <div class="slide-main">
+            <div class="slide-panel slide-panel-0">
+              <div class="slide-panel-img slide-panel-img-0"></div>
+              <p class="slide-desc">Royal Spring menawarkan rumah modern bergaya elegan dengan desain nyaman, ruang yang fungsional, dan suasana hunian asri cocok untuk keluarga.</p>
+            </div>
+            <div class="slide-panel slide-panel-1">
+              <div class="slide-panel-img slide-panel-img-1"></div>
+              <p class="slide-desc">Summarecon Residence menghadirkan interior premium dengan sentuhan kontemporer — perpaduan estetika dan kenyamanan untuk hunian modern.</p>
+            </div>
+            <div class="slide-panel slide-panel-2">
+              <div class="slide-panel-img slide-panel-img-2"></div>
+              <p class="slide-desc">CitraLand menawarkan ruang terbuka yang luas, pencahayaan alami yang optimal, dan material berkualitas tinggi di setiap sudut rumah.</p>
+            </div>
+            <div class="slide-panel slide-panel-3">
+              <div class="slide-panel-img slide-panel-img-3"></div>
+              <p class="slide-desc">The Outer Look — fasad eksterior yang megah mencerminkan karakter hunian prestisius dengan lanskap asri di lingkungan premium.</p>
+            </div>
+          </div>
+
+          <!-- Next: tiap label mengarah ke slide berikutnya -->
+          <label class="btn-outline next-0" for="s1">Next &#8594;</label>
+          <label class="btn-outline next-1" for="s2">Next &#8594;</label>
+          <label class="btn-outline next-2" for="s3">Next &#8594;</label>
+          <label class="btn-outline next-3" for="s0">Next &#8594;</label>
+
+        </div>
+      </div>
+    </section>
+
+   <!-- LEVEL 2: THE NEIGHBORHOOD -->
+<section class="neighborhood">
+  <div class="section-header">
+    <span class="section-label">The Neighborhood</span>
+    <h2 class="section-title">Discover the Premium Property Collection.</h2>
+  </div>
+
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <div class="marquee-card" style="background-image:url('Img/Gambar 2.jpeg')"></div>
+      <div class="marquee-card" style="background-image:url('Img/Gambar\ 10.png')"></div>
+      <div class="marquee-card" style="background-image:url('Img/Gambar\ 5.jpeg')"></div>
+      <div class="marquee-card" style="background-image:url('Img/Gambar 4.jpeg')"></div>
+      <!-- duplikat untuk seamless loop -->
+      <div class="marquee-card" style="background-image:url('Img/Gambar 2.jpeg')"></div>
+      <div class="marquee-card" style="background-image:url('Img/Gambar\ 10.png')"></div>
+      <div class="marquee-card" style="background-image:url('Img/Gambar\ 5.jpeg')"></div>
+      <div class="marquee-card" style="background-image:url('Img/Gambar 4.jpeg')"></div>
+    </div>
+  </div>
+
+  <img class="logo-img" src="img/Gambar_7.jpeg" alt="Agang Property Logo" />
+</section>
+
+    <!-- LEVEL 2: PROMO CTA BANNER -->
+    <section class="promo-banner">
+      <div class="promo-content">
+        <span class="promo-label">Limited Availability</span>
+        <h2 class="promo-title">Spring/Summer 2026 Dates Available</h2>
+        <a href="../Servis/index.html">
+          <button class="btn-cta">Book now</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">Agang Property</div>
+        <hr class="footer-hr" />
+        <div class="footer-meta">
+          <span class="footer-copy">&#169; 2026 All Rights Reserved</span>
+          <span class="footer-phone">(62) 815-4347-2272</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="#"><img class="social-icon" src="img/logo_Fb.png" alt="Facebook" /></a>
+        <a href="#"><img class="social-icon" src="img/Logo_IG.png" alt="Instagram" /></a>
+        <a href="#"><img class="social-icon" src="img/Logo_Tiktok.png" alt="TikTok" /></a>
+        <a href="#"><img class="social-icon" src="img/Logo_yt.png" alt="YouTube" /></a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
