@@ -1,4 +1,4 @@
-## 👥 Pembagian Pengerjaan
+Pembagian Pengerjaan
 
 - 🏠 **Home** → Muhammad Akmal  
 - 🖼️ **Galeri** → Natasya Mokoginta  
