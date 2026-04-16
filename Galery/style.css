@@ -254,11 +254,10 @@
 /* Hierarki Level 2 */
 .neighborhood {
   background: var(--bg);
-  padding: 100px 0 120px;
+  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
   overflow: hidden;
 }
 .neighborhood .section-header {
