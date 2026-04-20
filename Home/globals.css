@@ -35,7 +35,7 @@ button:focus-visible {
 
   /* Accents */
   --accent-1:  rgba(229, 203, 173, 1);
-  --accent-2:  rgba(119, 13,  13,  1);
+  --accent-2:  rgb(231, 165, 11);
   --accent-3:  rgba(74,  54,  45,  1);
 
   /* Headers */
@@ -45,7 +45,7 @@ button:focus-visible {
 
   /* Dividers */
   --divider-1: rgba(255, 255, 255, 0.4);
-  --divider-2: rgba(0,   0,   0,   1);
+  --divider-2: #483a2e;
 
   /* Links */
   --link-1:    rgba(0,   0,   0,   1);
