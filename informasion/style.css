@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background: #fff;
+  background: #483a2e;
   border-bottom: 0.5px solid var(--divider-2);
   position: sticky;
   top: 0;
@@ -55,21 +55,25 @@
   width: 200px;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
-  background: #fff;
+  padding: 16px 20px;
+  background: #483a2e;
   border-left: 0.5px solid var(--divider-2);
   cursor: pointer;
   transition: background 0.2s;
+  height: 100%;
+  box-sizing: border-box;
 
 }
 
-.nav-link-item:hover { background: #f9f9f9; }
+.nav-link-item:hover { 
+  background: rgb(231, 165, 11); 
+ }
 
 .nav-link-item span {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: #fdfafa;
   letter-spacing: 0;
   line-height: 15.4px;
   white-space: nowrap;
@@ -81,13 +85,14 @@
   align-items: center;
   justify-content: center;
   padding: 15px 20px;
-  background: var(--accent-2);
+  height: 100%;          
+  background: rgb(231, 165, 11);
   border: none;
   cursor: pointer;
   transition: background 0.2s;
 }
 
-.nav-book-btn:hover { background: #B8860B; }
+.nav-book-btn:hover { background: #8B1A1A }
 
 .nav-book-btn span {
   font-family: var(--font-body);

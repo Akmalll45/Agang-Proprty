@@ -22,7 +22,7 @@
 
   /* Dividers */
   --divider-1:   rgba(0, 0, 0, 0.12);   /* halus — section border, table row */
-  --divider-2:   rgba(0, 0, 0, 1);   /* sedikit lebih tebal — nav border */
+  --divider-2:   #483a2e;   /* sedikit lebih tebal — nav border */
 
   /* ==================== TYPOGRAPHY ==================== */
 
