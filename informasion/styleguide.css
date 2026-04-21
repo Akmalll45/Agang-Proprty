@@ -1,57 +1,40 @@
 /* =============================================================
    styleguide.css — Agang Property
-   Design tokens: semua CSS variables dipakai di style.css
+   SATU-SATUNYA tempat untuk CSS variables & responsive tokens
    ============================================================= */
-
 :root {
-
   /* ==================== COLORS ==================== */
-
-  /* Background */
   --bg-1:        #ffffff;
   --bg-2:        #f8f5f0;
   --bg-3:        #ffffff;
-
-  /* Brand */
-  --header-3:    #B8860B;   /* gold — brand utama, overlay text, footer */
-  --accent-2:    #8B1A1A;   /* maroon — nav Book now button */
-
-  /* Text */
-  --header-1:    #1a1a1a;   /* dark — headings & body text */
-  --header-2:    #5a3e00;   /* dark gold — link underline */
-
-  /* Dividers */
-  --divider-1:   rgba(0, 0, 0, 0.12);   /* halus — section border, table row */
-  --divider-2:   #483a2e;   /* sedikit lebih tebal — nav border */
+  --header-3:    #B8860B;
+  --accent-2:    #8B1A1A;
+  --header-1:    #1a1a1a;
+  --header-2:    #5a3e00;
+  --divider-1:   rgba(0, 0, 0, 0.12);
+  --divider-2:   #483a2e;
 
   /* ==================== TYPOGRAPHY ==================== */
-
-  /* Font families */
   --font-headingg: 'EB Garamond', Georgia, serif;
-  --font-heading: "Arimo", Helvetica, sans-serif;
-  --font-body:    'Roboto', Helvetica, sans-serif;
+  --font-heading:  "Arimo", Helvetica, sans-serif;
+  --font-body:     'Roboto', Helvetica, sans-serif;
 
-  /* H1 — "Information" hero */
-  --h1-size:  72px;
-  --h1-ls:    -0.02em;
-  --h1-lh:    1.05;
+  --h1-size:   72px;
+  --h1-ls:     -0.02em;
+  --h1-lh:     1.05;
 
-  /* H2 — section headings, overlay, CTA */
-  --h2-size:  38px;
-  --h2-ls:    -0.76px;
-  --h2-lh:    110%;
+  --h2-size:   38px;
+  --h2-ls:     -0.76px;
+  --h2-lh:     110%;
 
-  /* H3 — story heading */
-  --h3-size:  48px;
-  --h3-ls:    -0.01em;
-  --h3-lh:    1.1;
+  --h3-size:   48px;
+  --h3-ls:     -0.01em;
+  --h3-lh:     1.1;
 
-  /* Caption / small — nav links, labels, footer text */
-  --cap-size: 14px;
-  --cap-ls:   0px;
-  --cap-lh:   15.4px;
+  --cap-size:  14px;
+  --cap-ls:    0px;
+  --cap-lh:    15.4px;
 
-  /* Body text */
   --body-size: 18px;
   --body-lh:   1.75;
 
@@ -77,11 +60,12 @@
   --sp-160:  160px;
 
   /* ==================== LAYOUT ==================== */
-  --max-width:   1280px;
-  --nav-height:  52px;
-  --nav-btn-w:   200px;
-  --gutter:      40px;
-  --gutter-wide: 160px;
+  --max-width:    1280px;
+  --nav-height:   52px;
+  --nav-btn-w:    200px;
+  --gutter:       40px;
+  --gutter-wide:  160px;
+  --part-left-w:  340px;
 
   /* ==================== SHADOWS ==================== */
   --shadow-sm:  0 2px 8px rgba(0,0,0,.08);
@@ -98,4 +82,70 @@
   /* ==================== TRANSITIONS ==================== */
   --transition-fast:   0.2s ease;
   --transition-normal: 0.28s cubic-bezier(.22,.68,0,1.2);
+}
+
+/* =============================================================
+   TABLET (max 1024px)
+   ============================================================= */
+@media (max-width: 1024px) {
+  :root {
+    --h1-size:      52px;
+    --h2-size:      30px;
+    --h2-ls:        -0.6px;
+    --h3-size:      36px;
+    --body-size:    17px;
+    --gutter:       32px;
+    --gutter-wide:  80px;
+    --sp-80:        56px;
+    --sp-100:       64px;
+    --sp-160:       80px;
+    --nav-btn-w:    140px;
+    --part-left-w:  260px;
+  }
+}
+
+/* =============================================================
+   MOBILE (max 768px)
+   ============================================================= */
+@media (max-width: 768px) {
+  :root {
+    --h1-size:      40px;
+    --h1-ls:        -0.03em;
+    --h2-size:      24px;
+    --h2-ls:        -0.48px;
+    --h3-size:      28px;
+    --body-size:    16px;
+    --body-lh:      1.7;
+    --cap-size:     13px;
+    --gutter:       20px;
+    --gutter-wide:  20px;
+    --sp-48:        24px;
+    --sp-60:        28px;
+    --sp-80:        36px;
+    --sp-100:       40px;
+    --sp-160:       20px;
+    --nav-btn-w:    auto;
+    --part-left-w:  100%;
+  }
+}
+
+/* =============================================================
+   SMALL MOBILE (max 480px)
+   ============================================================= */
+@media (max-width: 480px) {
+  :root {
+    --h1-size:      32px;
+    --h1-ls:        -0.04em;
+    --h2-size:      20px;
+    --h2-ls:        -0.4px;
+    --h3-size:      22px;
+    --body-size:    15px;
+    --cap-size:     12px;
+    --gutter:       16px;
+    --gutter-wide:  16px;
+    --sp-40:        16px;
+    --sp-48:        18px;
+    --sp-60:        20px;
+    --sp-80:        28px;
+  }
 }

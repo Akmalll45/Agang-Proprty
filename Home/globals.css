@@ -10,6 +10,8 @@
 
 html, body {
   height: 100%;
+  /* FIX: cegah scroll horizontal di semua device */
+  overflow-x: hidden;
 }
 
 a {
@@ -20,6 +22,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto; /* FIX: pastikan gambar tidak overflow */
 }
 
 button:focus-visible {
@@ -32,39 +35,48 @@ button:focus-visible {
   --bg-1:      #ffffff;
   --bg-2:      #000000;
   --bg-3:      #ffffff;
-
   /* Accents */
   --accent-1:  rgba(229, 203, 173, 1);
   --accent-2:  rgb(231, 165, 11);
   --accent-3:  rgba(74,  54,  45,  1);
-
   /* Headers */
   --header-1:  rgba(32,  29,  25,  1);
   --header-2:  rgba(0,   117, 255, 1);
   --header-3:  rgba(184, 134, 11,  1);
-
   /* Dividers */
   --divider-1: rgba(255, 255, 255, 0.4);
   --divider-2: #483a2e;
-
   /* Links */
   --link-1:    rgba(0,   0,   0,   1);
   --link-2:    rgba(255, 255, 255, 1);
-
   /* Typography */
   --font-heading: "Arimo", Helvetica, sans-serif;
   --font-body:    "Roboto", Helvetica, sans-serif;
-
   /* Heading 2 */
   --h2-size: 48px;
   --h2-ls:   -0.96px;
   --h2-lh:   110%;
-
   /* Caption */
   --cap-size: 16px;
   --cap-ls:   -0.32px;
   --cap-lh:   110%;
-
   /* Paragraph */
   --p2-size: 14px;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY TOKENS ===== */
+@media (max-width: 768px) {
+  :root {
+    --h2-size: 28px;
+    --h2-ls:   -0.56px;
+    --cap-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --h2-size: 22px;
+    --h2-ls:   -0.44px;
+    --cap-size: 13px;
+  }
 }

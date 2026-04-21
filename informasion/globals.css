@@ -1,8 +1,7 @@
 /* =============================================================
    globals.css — Agang Property
-   Reset & base styles
+   Reset & base styles ONLY — semua token ada di styleguide.css
    ============================================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap');
 
 /* ---- Box-sizing reset ---- */
@@ -16,16 +15,17 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 /* ---- Body ---- */
 body {
   font-family: var(--font-body);
-  font-size: var(--cap-size);
   color: var(--header-1);
   background: var(--bg-1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* ---- Media ---- */
@@ -43,25 +43,14 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--header-1);
 }
 
-p {
-  margin: 0;
-  line-height: 1.7;
-}
+p { margin: 0; line-height: 1.7; }
 
 /* ---- Links ---- */
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.85;
-}
+a { color: inherit; text-decoration: none; }
+a:hover { opacity: 0.85; }
 
 /* ---- Lists ---- */
-ul, ol {
-  list-style: none;
-}
+ul, ol { list-style: none; }
 
 /* ---- Buttons ---- */
 button {
@@ -84,3 +73,6 @@ input, textarea, select {
   font-family: inherit;
   font-size: inherit;
 }
+
+/* CATATAN: Tidak ada responsive token di sini.
+   Semua responsive token diatur di styleguide.css */
