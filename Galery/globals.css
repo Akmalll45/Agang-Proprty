@@ -13,12 +13,12 @@ img { display: block; max-width: 100%; height: auto; }
   --gold-light:  #D4A017;
   --gold-buram: #c8850aa0;
   --gold-dark:   #7B0D0D;
-  --dark:        #201D19;
+  --dark:        #1a1a1a;
   --crimson:     #770D0D;
   --white:       #FFFFFF;
   --bg:          #F9F7F4;
   --divider:     rgba(0,0,0,0.12);
-  --divider-inv: rgba(255,255,255,0.25);
+  --divider-inv: rgba(255, 255, 255, 0.2);
 
   --font-display: 'EB Garamond', Georgia, serif;
   --font-ui:      'Arimo', Helvetica, sans-serif;
@@ -207,14 +207,18 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--gold);
 }
 .footer-bottom {
-  padding: 20px clamp(20px, 4vw, 48px) 0;
+  padding: 20px clamp(20px, 4vw, 48px) 20px; 
   border-top: 1px solid var(--divider-inv);
   display: flex;
   align-items: center;
+  margin: 0 24px;
 }
+
 .social-icon {
-  width: 28px;
-  height: 28px;
+  margin: 0 2px; 
+  padding-top: 12px; 
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   opacity: 0.65;
   transition: opacity .2s, transform .2s;
@@ -225,10 +229,8 @@ img { display: block; max-width: 100%; height: auto; }
 @media (max-width: 768px) {
   .navigation    { flex-wrap: wrap; height: auto; }
 
-  /* Baris 1: logo full width */
   .nav-title     { padding: 10px 16px; height: auto; flex: 1 1 100%; width: 100%; }
 
-  /* Baris 2: menu full width */
   .nav-links     { 
     width: 100%; 
     flex: 1 1 100%;
@@ -236,7 +238,6 @@ img { display: block; max-width: 100%; height: auto; }
     border-top: 0.5px solid rgba(72, 58, 46, 1); 
   }
 
-  /* Setiap <a> bagi rata */
   .nav-links > a { 
     flex: 1; 
     display: flex; 
@@ -252,14 +253,13 @@ img { display: block; max-width: 100%; height: auto; }
     border-left: 0.5px solid rgba(255, 255, 255, 0.15); /* ← putih tipis */
   }
 
-  /* Hapus border kiri item pertama */
   .nav-links > a:first-child .nav-link-item {
     border-left: none;
   }
 
   .nav-book-btn {
     flex: 1;
-    width: 100%;          /* ← fix sisa kuning */
+    width: 100%;          
     min-width: 0;
     padding: 12px 6px;
   }

@@ -1,7 +1,3 @@
-/* =============================================================
-   style.css — Agang Property (Info Page)
-   Load order: globals.css → styleguide.css → style.css
-   ============================================================= */
 
 /* ==================== WRAPPER ==================== */
 .desktop {
@@ -18,7 +14,7 @@
 /* ==================== NAVIGATION ==================== */
 .navigation {
   display: flex;
-  flex-wrap: wrap;              /* PENTING: agar bisa 2 baris di mobile */
+  flex-wrap: wrap;              
   align-items: stretch;
   width: 100%;
   background: #483a2e;
@@ -32,7 +28,7 @@
   display: flex;
   align-items: center;
   padding: 0 0 0 var(--gutter);
-  flex: 1 1 auto;               /* tumbuh mengisi sisa, tapi tidak wrap sendiri */
+  flex: 1 1 auto;               
 }
 
 .nav-logo {
@@ -41,14 +37,12 @@
   object-fit: contain;
 }
 
-/* nav-links adalah flex row, berisi semua <a> termasuk Book Now */
 .nav-links {
   display: flex;
   align-items: stretch;
   flex: 0 0 auto;               /* desktop: ukuran apa adanya */
 }
 
-/* Setiap <a> di dalam nav-links harus ikut stretch */
 .nav-links > a {
   display: flex;
   align-items: stretch;
@@ -146,8 +140,8 @@
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: flex-end;
-  padding: var(--sp-60) var(--gutter-wide);
+  align-items: flex-start;
+  padding: 120px var(--gutter-wide) 0;   
 }
 
 .section-overlay-text {
@@ -157,6 +151,7 @@
   color: var(--header-3);
   line-height: var(--h2-lh);
   max-width: 800px;
+  max-height: 100px;
 }
 
 /* ==================== MY STORY SECTION ==================== */
@@ -449,21 +444,22 @@
 .footer-social-wrapper {
   padding-top: var(--sp-20);
   border-top: 1px solid var(--divider-1);
+  border-top: 1px solid rgba(255, 255, 255, 0.4); 
   width: 100%;
 }
 
 .social-icons {
   display: inline-flex;
   align-items: center;
-  gap: var(--sp-16);
+  gap: 20px;
 }
 
 .social-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
+  width: 28px;
+  height: 28px;
   color: var(--header-3);
   transition: opacity var(--transition-fast);
 }
@@ -486,9 +482,6 @@
   stroke: none;
 }
 
-/* =============================================================
-   RESPONSIVE — MOBILE (max 768px)
-   ============================================================= */
 @media (max-width: 768px) {
 
   /* ----- NAVBAR ----- */
@@ -564,30 +557,25 @@
     width: 100%;
   }
 
-  /* Justify kurang ideal di mobile */
   .story-body,
   .property-desc,
   .meta-value {
     text-align: left;
   }
 
-  /* Section overlay padding lebih kecil */
   .section-overlay {
     padding: var(--sp-20) var(--gutter);
   }
 
-  /* Story section padding kecil */
   .my-story-section {
     padding: 0 var(--gutter) var(--sp-40);
   }
 
-  /* Part gap lebih kecil di mobile */
   .part {
     gap: var(--sp-24);
     padding: var(--sp-40) 0 var(--sp-24);
   }
 
-  /* Property row gap */
   .property-row {
     gap: var(--sp-8);
     padding: var(--sp-24) 0;

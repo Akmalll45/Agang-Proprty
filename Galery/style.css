@@ -350,12 +350,11 @@
    ============================================================= */
 @media (max-width: 768px) {
 
-  /* Card row: 1 kolom */
   .card-row {
     grid-template-columns: 1fr;
   }
 
-  /* Slideshow: tombol prev/next ke bawah */
+  
   .slideshow-row {
     flex-direction: column;
     gap: 20px;
@@ -365,7 +364,7 @@
     align-self: center;
   }
 
-  /* Promo title max-width full */
+  
   .promo-title { max-width: 100%; }
 }
 
