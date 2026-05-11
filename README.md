@@ -22,3 +22,6 @@ Pembagian Pengerjaan
 3. Optimasi Performa
 - Menurunkan rasio/pixel ukuran asset (gambar) untuk mempercepat loading
 - Mengoptimalkan penggunaan asset agar website lebih ringan
+
+4. Optimasi pelayanan dalam bisnis
+- menambahkan nomor wa sales kedalam setiap proprty agar terjalin interaksi secara langsung antara costumer dan salesnya
