@@ -8,9 +8,11 @@ Pembagian Pengerjaan
 *Perbaikan*
 
 1. Perubahan Visual
-- Mengganti logo dari sebelumnya berbentuk teks menjadi berbentuk gambar untuk meningkatkan identitas visual
+- Mengganti logo dari sebelumnya berbentuk teks menjadi berbentuk gambar untuk meningkatkan   identitas visual
 - Mengubah warna pada navbar agar lebih konsisten dan modern
 - Menyesuaikan font pada navbar untuk meningkatkan keterbacaan
+- Mengubah warna bottom book now dari yang awalnya **merah maron ke emas** menjadi **emas ke merah maron**
+- Menaikkan rasio shahdow hitam di bagian home pada bagian belakang text "Anything You Want..." agar tulisannya lebih timbul 
 
 2. Perbaikan Tampilan Teks
 - Memperbaiki masalah font yang menumpuk pada bagian **Home**
