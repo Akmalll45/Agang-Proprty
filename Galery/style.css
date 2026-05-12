@@ -134,11 +134,12 @@
 .slideshow-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: clamp(24px, 4vw, 48px);
   width: 100%;
 }
 
-.thumb-strip { display: flex; gap: 12px; width: 100%; }
+.thumb-strip { display: flex; gap: 12px; width: 35%;}
 .thumb-label {
   flex: 1;
   aspect-ratio: 1;
@@ -316,7 +317,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.48);
+  background: rgba(0,0,0,0.70);
 }
 .promo-content {
   position: relative;
