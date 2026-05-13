@@ -105,6 +105,10 @@
 .info-hero {
   padding-top: 70px;
   padding-bottom: 30px; 
+
+  padding: 25px;
+  padding-top: 70px;
+  padding-bottom: 30px;
   background: var(--bg-1);
 }
 
