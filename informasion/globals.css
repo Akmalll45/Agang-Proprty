@@ -37,7 +37,7 @@ img, video, svg {
 
 /* ---- Typography ---- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-headingg);
   font-weight: 700;
   line-height: 1.1;
   color: var(--header-1);
