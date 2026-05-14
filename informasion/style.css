@@ -40,7 +40,7 @@
 .nav-links {
   display: flex;
   align-items: stretch;
-  flex: 0 0 auto;               /* desktop: ukuran apa adanya */
+  flex: 0 0 auto;               
 }
 
 .nav-links > a {
@@ -137,7 +137,7 @@
   width: 100%;
   height: clamp(180px, 30vw, 400px);
   display: block;
-  filter: brightness(0.5);
+  filter: brightness(0.3);
   object-fit: cover;
 }
 
@@ -145,7 +145,7 @@
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding: 120px var(--gutter-wide) 0;   
 }
 
@@ -153,10 +153,10 @@
   font-family: var(--font-heading);
   font-size: var(--h2-size);
   font-weight: 400;
+  justify-content: center;
   color: var(--header-3);
   line-height: var(--h2-lh);
-  max-width: 800px;
-  max-height: 100px;
+  max-width: 100%;
 }
 
 /* ==================== MY STORY SECTION ==================== */
