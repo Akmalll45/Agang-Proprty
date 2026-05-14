@@ -17,7 +17,7 @@
 .hero-banner {
   position: relative;
   height: clamp(200px, 40vw, 520px);
-  background: url('img/Gambar_6.jpeg') center/cover no-repeat;
+  background: url('img/Gambar_kompres_6.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +91,7 @@
   margin-top: -8px;
 }
 
-.prop-card-img-summarecon { background-image: url('img/Gambar_8.png'); }
+.prop-card-img-summarecon { background-image: url('img/Gambar_kompres_8.jpg'); }
 .prop-card-img-citraland  { background-image: url('img/Gambar_9.jpeg'); }
 
 .outer-look {
@@ -101,13 +101,125 @@
   width: 100%;
   overflow: hidden;
 }
-.outer-look-img {
+.outer-look-img-1,
+.outer-look-img-2,
+.outer-look-img-3,
+.outer-look-img-4,
+.outer-look-img-5,
+.outer-look-img-6 {
   width: 100%;
   height: clamp(180px, 35vw, 640px);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* CONTAINER */
+.outer-look {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* CARD */
+.outer-look-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.outer-look {
+  display: grid;            /* Menggunakan flexbox lebih simpel untuk satu baris teks */
+  justify-content: center;   /* Mengetengahkan secara horizontal */
+  text-align: center;        /* Memastikan teks di dalamnya terpusat */
+  margin-left: 5px;
+  white-space: nowrap;       /* KUNCI: Mencegah teks turun ke bawah (tetap 1 baris) */
+  width: 100%;               /* Memastikan container mengambil ruang penuh agar bisa di-center */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-outerlook{
+  text-align: center;
+  margin-left: 135%;
+  margin-top: 25px;
+  color: #555;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.outer-look-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* semua gambar */
+.outer-look-Gambar_kompres_8,
+.outer-look-Gambar_kompres_15,
+.outer-look-Gambar_kompres_13,
+.outer-look-Gambar_kompres_16,
+.outer-look-Gambar_kompres_3,
+.outer-look-Gambar_kompres_14{
+  width: 100%;
+  height: 250px;
+
   background-size: cover;
   background-position: center;
-  background-image: url('img/Gambar_1.jpeg');
-  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* gambar */
+.outer-look-Gambar_kompres_8 {
+  background-image: url('img/Gambar_kompres_8.jpg');
+}
+
+.outer-look-Gambar_kompres_15 {
+  background-image: url('img/Gambar_kompres_15.jpg');
+}
+
+.outer-look-Gambar_kompres_13 {
+  background-image: url('img/Gambar_kompres_13.jpg');
+}
+
+.outer-look-Gambar_kompres_16 {
+  background-image: url('img/Gambar_kompres_16.jpg');
+}
+
+.outer-look-Gambar_kompres_3 {
+  background-image: url('img/Gambar_kompres_3.png');
+}
+
+.outer-look-Gambar_kompres_14 {
+  background-image: url('img/Gambar_kompres_14.jpg');
+}
+
+/* text */
+.outer-look-content {
+  padding: 15px;
+}
+
+.outer-look-content h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* TEXT */
+.outer-look-content {
+  padding: 16px;
+}
+
+.outer-look-content h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.outer-look-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
 }
 .outer-look-label {
   font-family: var(--font-ui);
@@ -133,12 +245,11 @@
 .slideshow-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: clamp(24px, 4vw, 48px);
   width: 100%;
 }
 
-.thumb-strip { display: flex; gap: 12px; width: 35%;}
+.thumb-strip { display: flex; gap: 12px; width: 100%; }
 .thumb-label {
   flex: 1;
   aspect-ratio: 1;
@@ -153,9 +264,9 @@
   overflow: hidden;
 }
 .thumb-label:hover { opacity: 0.85; transform: scale(1.03); }
-.thumb-label-0 { background-image: url('img/Gambar_10.png'); }
+.thumb-label-0 { background-image: url('img/Gambar_kompres_10.jpg'); }
 .thumb-label-1 { background-image: url('img/Gambar_4.jpeg'); }
-.thumb-label-2 { background-image: url('img/Gambar_5.jpeg'); }
+.thumb-label-2 { background-image: url('img/Gambar_kompres_5.jpg'); }
 .thumb-label-3 { background-image: url('img/Gambar_2.jpeg'); }
 
 #s0:checked ~ .slideshow-wrap .thumb-label-0,
@@ -186,9 +297,9 @@
   background-position: center;
   overflow: hidden;
 }
-.slide-panel-img-0 { background-image: url('img/Gambar_10.png'); }
+.slide-panel-img-0 { background-image: url('img/Gambar_kompres_10.jpg'); }
 .slide-panel-img-1 { background-image: url('img/Gambar_4.jpeg'); }
-.slide-panel-img-2 { background-image: url('img/Gambar_5.jpeg'); }
+.slide-panel-img-2 { background-image: url('img/Gambar_kompres_5.jpg'); }
 .slide-panel-img-3 { background-image: url('img/Gambar_2.jpeg'); }
 
 #s0:checked ~ .slideshow-wrap .slideshow-row .slide-panel-0,
@@ -307,7 +418,7 @@
 .promo-banner {
   position: relative;
   min-height: clamp(280px, 40vw, 550px);
-  background: url('img/Gambar_11.png') center/cover no-repeat;
+  background: url('img/Gambar_kompres_12.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   padding: clamp(40px, 5vw, 0px) 0;
@@ -316,7 +427,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.70);
+  background: rgba(0,0,0,0.48);
 }
 .promo-content {
   position: relative;
@@ -393,4 +504,24 @@
   .hero-banner  { height: 620px; }
   .promo-banner { min-height: 680px; }
   .outer-look-img { height: 700px; }
+}
+/* ===================== GALLERY FIX ===================== */
+
+.marquee-inner {
+  display: flex;
+  gap: 16px;
+}
+
+.marquee-card {
+  width: 260px;
+  height: 180px;
+
+  flex-shrink: 0;
+
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 8px;
+
+  overflow: hidden;
 }
