@@ -16,6 +16,7 @@
   display: flex;
   flex-wrap: wrap;              
   align-items: stretch;
+  justify-content: space-between;
   width: 100%;
   background: #483a2e;
   border-bottom: 0.5px solid var(--divider-2);
@@ -28,7 +29,7 @@
   display: flex;
   align-items: center;
   padding: 0 0 0 var(--gutter);
-  flex: 1 1 auto;
+  flex: 1 1 auto;  
   font-family: var(--font-headingg);               
 }
 
@@ -104,7 +105,12 @@
 
 /* ==================== INFO HERO ==================== */
 .info-hero {
-  padding: var(--sp-20) var(--gutter);
+  padding-top: 70px;
+  padding-bottom: 30px; 
+
+  padding: 25px;
+  padding-top: 70px;
+  padding-bottom: 30px;
   background: var(--bg-1);
 }
 
@@ -115,8 +121,6 @@
   color: var(--header-1);
   letter-spacing: var(--h1-ls);
   line-height: var(--h1-lh);
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 /* ==================== MAIN ==================== */
@@ -325,7 +329,7 @@
 .date-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.70);
 }
 
 .date-content {
