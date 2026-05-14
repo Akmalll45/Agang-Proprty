@@ -338,7 +338,13 @@
   color: var(--header-1);
   letter-spacing: var(--h2-ls);
   line-height: var(--h2-lh);
+  white-space: nowrap;       /* KUNCI: Mencegah teks turun ke bawah (tetap 1 baris) */
   text-align: justify;
+}
+
+.about-body .brandd {
+  color: var(--header-3);
+  font-style: italic;
 }
 
 .about-body a {
@@ -375,7 +381,7 @@
 .date-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.65);
 }
 
 .date-content {
