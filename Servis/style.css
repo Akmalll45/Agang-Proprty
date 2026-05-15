@@ -23,6 +23,7 @@
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Barlow', sans-serif;
   --font-label:   'Barlow Condensed', sans-serif;
+  --font-agang:   "Arimo", Helvetica, sans-serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);
@@ -59,7 +60,7 @@ ul { list-style: none; }
   grid-template-columns: 1fr auto;
   align-items: stretch;
   height: 52px;
-  background: #1a1814;
+  background: #1a1414;
   border-bottom: 3px solid #111009;
 }
 
@@ -85,7 +86,8 @@ ul { list-style: none; }
 }
 
 .nav-logo {
-  height: 40px;
+  padding-top: 10px;
+  height: 35px;
   width: auto;
   object-fit: contain;
 }
@@ -100,10 +102,9 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   padding: 0 clamp(28px, 4vw, 56px);
-  font-family: var(--font-label);
+  font-family: var(--font-agang);
   font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  letter-spacing: 0px;
   color: var(--text-secondary);
   transition: color 0.25s, background 0.25s;
   position: relative;
@@ -111,7 +112,7 @@ ul { list-style: none; }
 }
 .nav-link:hover {
   color: var(--gold-light);
-  background: rgba(201,168,76,0.04);
+  background: rgba(255, 187, 0, 0.04);
 }
 .nav-link::after {
   content: '';
@@ -494,15 +495,15 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,168,76,0.05) 0%, transparent 70%),
-    rgba(10, 9, 5, 0.78);
+    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,168,76,0.05) 0%, transparent 80%),
+    rgba(0, 0, 0, 0.80);
   pointer-events: none;
 }
 
 .cta-inner { position: relative; z-index: 1; }
 
 .cta-eyebrow {
-  font-family: var(--font-label);
+  font-family: var(--font-agang);
   font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -546,12 +547,12 @@ ul { list-style: none; }
 }
 
 .footer-brand {
-  font-family: var(--font-label);
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
+  font-family: var(--font-agang);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 15.4px;
+  color: var(--text-secondary);
 }
 
 .footer-hr {
@@ -617,7 +618,7 @@ ul { list-style: none; }
 }
 
 .social-icons svg {
-  fill: var(--text-secondary);
+  fill: var(--gold);
 }
 
 /* ══════════════════════════════════════════

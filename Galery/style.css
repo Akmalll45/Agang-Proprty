@@ -117,7 +117,7 @@
 /* CONTAINER */
 .outer-look {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   width: 100%;
 }
@@ -135,7 +135,7 @@
   justify-content: center;   /* Mengetengahkan secara horizontal */
   text-align: center;        /* Memastikan teks di dalamnya terpusat */
   white-space: nowrap;       /* KUNCI: Mencegah teks turun ke bawah (tetap 1 baris) */
-  width: 100%;               /* Memastikan container mengambil ruang penuh agar bisa di-center */
+  width: 95%;               /* Memastikan container mengambil ruang penuh agar bisa di-center */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .outer-look-card {
-  background: #fff;
+  background: var(--crimson);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -169,6 +169,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* gambar */
@@ -204,6 +205,7 @@
 .outer-look-content h3 {
   font-size: 15px;
   margin: 0;
+  color: var(--gold);
 }
 
 /* TEXT */
@@ -214,6 +216,7 @@
 .outer-look-content h3 {
   font-size: 15px;
   margin-bottom: 8px;
+  color: var(--gold);
 }
 
 .outer-look-content p {
@@ -378,6 +381,8 @@
   display: flex;
   gap: 16px;
   width: max-content;
+  will-change: transform;
+  backface-visibility: hidden;
   animation: marquee-left 28s linear infinite;
 }
 .marquee-inner--reverse {
@@ -395,7 +400,7 @@
   background-position: center;
   overflow: hidden;
   transition: transform .3s, opacity .3s;
-  opacity: 0.88;
+  opacity: 0.95;
 }
 .marquee-card:hover { transform: scale(1.04); opacity: 1; }
 

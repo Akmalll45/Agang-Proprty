@@ -567,7 +567,7 @@
   .story-body,
   .property-desc,
   .meta-value {
-    text-align: left;
+    text-align: justify;
   }
 
   .section-overlay {

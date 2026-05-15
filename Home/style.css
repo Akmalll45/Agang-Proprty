@@ -204,7 +204,7 @@
 .view-full-gallery a {
   font-family: var(--font-heading);
   font-weight: 400;
-  font-size: var(--h2-size);
+  font-size: 30px;
   letter-spacing: var(--h2-ls);
   line-height: var(--h2-lh);
   color: var(--header-2);
@@ -338,7 +338,6 @@
   color: var(--header-1);
   letter-spacing: var(--h2-ls);
   line-height: var(--h2-lh);
-  white-space: nowrap;       /* KUNCI: Mencegah teks turun ke bawah (tetap 1 baris) */
   text-align: justify;
 }
 
@@ -347,7 +346,7 @@
   font-style: italic;
 }
 
-.about-body a {
+.about-body .link {
   color: #0075ff;
   text-decoration: underline;
   display: inline;
